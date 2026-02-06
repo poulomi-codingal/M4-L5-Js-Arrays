@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Call stack in JS
+        //Call Stack is a mechanism in JavaScript that keeps track of function calls using the Last In First Out (LIFO) principle.
+
+        function f1(){
+            return "Hello JS"; 
+        }
+
+    
+        function f2(){
+            //f1();
+            return f1() + " Hello Python ";
+        }
+        document.write(f2() + "<br>");
+
+        function add(a,b){
+            return a+b;
+        }
+
+        function mul(a,b){
+            return add(a,b)**2;
+        }
+
+        document.write(mul(2,3))
+    </script>
+</body>
+</html>
